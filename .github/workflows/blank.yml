@@ -1,5 +1,5 @@
-      - name: Generate HTML from Markdown
-        uses: ldeluigi/markdown-docs@latest
-        with:
-          src: doc
-          dst: generated
+- name: Generate HTML from Markdown
+  uses: ldeluigi/markdown-docs@latest
+  with:
+    src: .
+      dst: generated
