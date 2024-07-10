@@ -3,6 +3,13 @@ Static RAM:  is used as cache memory for computers. Employs flip-flop tech to st
 Dynamic RAM: uses transistors and capacitors to store data. Static RAM is faster, but more expensive
 
 Blade servers take up the least amount of physical space of all server types
+
+When installing cabling, it is important to consider the bend radius. This is the minimum radious that a cable can be bent
+without damaging it. The greater the flexibility of material used, the smaller the radius. I.e twisted pair coaxial cable
+is more flexible than fibre optic and thus has a smaller bend radius. 
+
+BIOS settings can be configured to include a password that prevents users from accessing it at startup. The Bios resides on a
+an EPROM read-only chip
 ````
 ````.text
 A RAID Controller is device that manages storage devices such as hard drives.
@@ -10,11 +17,25 @@ A RAID Controller is device that manages storage devices such as hard drives.
 RAID0 - utilises disk stripping across muliple drives
 RAID1 - uses disk mirroring, provides data availability in event of another drive crashing. Requires a minimum of 2 hard drives
 RAID5 - uses disk strip with parity. Will provide data in event 1 hard drive crashes. Needs 3 drives minimum
-RAID10 - uses disk mirror and stripping. Provides data if one drive crashes. Needs 4 hard drives minimum 
+RAID10 - uses disk mirror and stripping. Provides data if one drive crashes. Needs 4 hard drives minimum
+
+An IMPI (intelligent platform management interface) can be used to diagnose issues affecting servers. Management modules
+on blade servers provide access to single point of control for ALL servers on a chasis, so you can diagnose issues affecting
+one via another. 
 ````
 ````.text
 USB/CD-ROM can be used as removable media capable of being transfered offsite quickly. As such, needs to be safeguarded
 more than other media types. 
+
+Cat6 shielded twisted pair cabling is capable of spanning distances of 100yards with max speeds of 10gbps. MultiMode fibre is also capable of doing 
+around 30-85yards with max bandwidth of 10gbps. Shielded twisted pair comes out on top however as it provides shielding 
+against electromagenetic interfearance. (emi)
+
+Liquids and Switch Mode Power Supplies both regulate heat on a computer server. An SMPS is a power supply unit that converts
+electrical power into an efficient way of using a switching regulator. Liquid cooling involves pumping coolant constantly 
+to keep the machines temp low. 
+
+
 ````
 ````.text
 Dual Corded Power Distribution Units for redundancy is a good idea for multiserver systems. 
@@ -35,6 +56,9 @@ Bigger cache values allow the CPU to work more effectively.
 ````.text
 In a network where security is a concern and devices must be limited to specific ports and servers, LUN zoning is a great idea. 
 It is essentially creating smaller networks within a larger storage networking environment.
+
+KBM (kernal based virtual machine) provides an infrastructure for virtualisation on a linux machine. Allows the system to create 
+and run vm's run by the hypervisor. 
 ````
 ````.text
 When dealing with upgrades on servers, any component changes should always be met with firmware updates/changes too. This can
